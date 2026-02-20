@@ -80,7 +80,7 @@ class TaskManager:
 ##logout 
     def logout_user(self):
             if not os.path.exists(self.session_file):
-                raise InvalidInputError("No user is currently logged in.")
+                raise InvalidInputError("No user logged in!!")
 
             with open(self.session_file, "w") as f:
                 json.dump({"current_user": None}, f)

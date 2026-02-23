@@ -90,7 +90,7 @@ def test_filter_no_match(manager):
     manager.register_user("user", "1234")
     manager.add_task("Gym", "6AM", 1, "2026-02-20")
     with pytest.raises(TaskNotFoundError):
-        manager.show_tasks(status="pending")
+        manager.show_tasks(status="completed")
 
 def test_add_without_login(manager):
     with pytest.raises(InvalidInputError):

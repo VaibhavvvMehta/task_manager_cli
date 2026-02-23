@@ -170,7 +170,7 @@ class TaskManager:
             filtered_tasks = [t for t in filtered_tasks if t["due"] == due]
 
         if not filtered_tasks:
-            raise TaskNotFoundError("No matching tasks found.")
+            raise TaskNotFoundError("Matching task not found")
 
         return filtered_tasks
 

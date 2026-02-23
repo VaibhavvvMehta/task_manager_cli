@@ -63,10 +63,10 @@ Pull Requests (PRs) are how your code gets into the main project. Here's the com
 **Test your changes:**
 ```bash
 # Run all tests
-python -m pytest test/
+python3 -m pytest test/
 
 # Test your specific changes manually
-python task_manager.py  # make sure it works
+python3 task_manager.py  # make sure it works
 ```
 
 **Make sure your branch is up to date:**
@@ -132,7 +132,7 @@ git branch -d your-branch-name  # delete your local branch
 
 Run tests before submitting:
 ```bash
-python -m pytest test/
+python3 -m pytest test/
 ```
 
 Write tests for new features in the `test/` directory.
